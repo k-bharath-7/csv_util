@@ -105,7 +105,7 @@ exports.createCSVWithObj = async (
 		path: filePath,
 		encoding: "utf-8",
 		header,
-		alwaysQuote: true,
+		alwaysQuote: false,
 	});
 	await objCsvWriter.writeRecords(csvData);
 
